@@ -7,7 +7,7 @@
   <body>
     <header>
     <nav>
-      <a>
+      <a href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
       </a>
       <ul>
@@ -23,16 +23,40 @@
      <h2>Фильтр гостиниц</h2>
      <h3>Инфраструктура:</h3>
       <ul>
-        <li>Бассейн</li>
-        <li>Парковка</li>
-        <li>WI-FI</li>
+        <li>
+          <input type="checkbox" name="pool" id="pool">
+          <label for="pool">бассейн</label>
+        </li>
+        <li>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" name="wifi" id="wifi">
+          <label for="wifi">wi-fi</label>
+        </li>
       </ul>
      <h3>Тип жилья</h3>
       <ul>
-          <li>Гостиница</li>
-          <li>Мотель</li>
-          <li>Апартаменты</li>
+        <li>
+          <input type="checkbox" name="hotel" id="hotel">
+          <label for="hotel">гостиница</label>
+        </li>
+        <li>
+          <input type="checkbox" name="motel" id="motel">
+          <label for="motel">мотель</label>
+        </li>
+        <li>
+          <input type="checkbox" name="appartment" id="appartment">
+          <label for="appartment">апартаменты</label>
+        </li>
       </ul>
+      <div>
+      <h3>Стоимость жилья в сутки(Р)</h3>
+        <span>от0</span>  <span>до3000</span><br>
+        <input type="range" min="0" max="3000"><br>
+        <input type="submit" name="show">
+      </div>
      <h3>НАЙДЕНО:</h3>
       <div>Здесь будет количество найденых</div>
      <h3>СОРТИРОВКА:</h3>
@@ -43,9 +67,6 @@
         </ul>
         <div><a href="">По убыванию</a></div>
         <div><a href="">По возрастанию</a></div>
-     <h3>Стоимость жилья в сутки(Р)</h3>
-      <div>от0 - до3000</div>
-      <div>Здесь будет слайдер цен</div>
     </section>
     <section>
        <h2>Список гостиниц</h2>
