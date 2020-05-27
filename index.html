@@ -21,13 +21,15 @@
 </nav>
 </header>
 <main>
+  <section class="background">
   <h1 class="visually-hidden" >Седона</h1>
     <img src="img/welcome.png" width="188" height="45" alt="logo:Welcome">
     <img src="img/to-the-georgeous.png" width="256" height="29" alt="to-the-gorgeous">
-    <img src="img/Sedona.png" width="457" height="213" alt="Sedona">
-  <section id="info">
+    <img src="img/Sedona.png" width="457" height="213" alt="Sedona" class="sedona-png">
+  </section>
+  <section id="info" class="sedona-info">
     <h2 class="visually-hidden">Приемущества</h2>
-    <p>Седона-небольшой городок в Аризоне,заслуживающий большего!</p>
+    <p class="info-header">Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</p>
     <p>Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон!</p>
   </section>
   <section>
@@ -100,13 +102,13 @@
 
       <label for="adults">Взрослые</label>
         <span class="minus">-</span>
-        <input class="form1" id="adults" type="text" value="2" size="2">
+        <input class="form1" id="adults" type="text" placeholder="2" size="2">
         <span class="plus">+</span>
 
 
       <label for="children">Дети</label>
         <span class="minus">-</span>
-        <input class="form1" id="children" type="text" value="0" size="2">
+        <input class="form1" id="children" type="text" placeholder="0" size="2">
         <span class="plus">+</span> <br>
 
       <button type="submit" name="search">найти</button>
@@ -117,21 +119,21 @@
   </section>
 </main>
   <footer>
-   <section>
+   <section  class="contact">
      <h2 class="visually-hidden">Наш контакт</h2>
      <p>
      #visitsedona<br>ТЕЛ. +7(495)666-02-66
      </p>
    </section>
-   <section>
+   <section class="social">
      <h2 class="visually-hidden">Мы в социальных сетях</h2>
      <p>
-     <a href=""> <img style="background-color:blue;" src="img/twitter.svg" width="17" height="17" alt="twitter"> Тут будет наш твиттер</a>
-     <a href=""> <img src="img/fb-icon.svg" width="12" height="22" alt="fb">  Тут будет наш фейсбук</a>
-     <a href=""> <img src="img/youtube.svg" width="20" height="16" alt="youtube"> Тут будет наш ютуб</a>
+     <a href="" class="icon"> <img class="visually-hidden"  src="img/twitter.svg" width="17" height="17" alt="twitter"> Тут будет наш твиттер</a>
+     <a href="" class="icon"> <img src="img/fb-icon.svg" width="12" height="22" alt="fb">  Тут будет наш фейсбук</a>
+     <a href="" class="icon"> <img src="img/youtube.svg" width="20" height="16" alt="youtube"> Тут будет наш ютуб</a>
     </p>
   </section>
-<p>
+<p class="htmlacademy">
     Website by:
     <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML Academy"></a>
 </p>
