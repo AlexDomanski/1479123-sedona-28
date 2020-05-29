@@ -8,17 +8,17 @@
   </head>
   <body>
     <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-      </a>
-      <ul>
-         <li><a href="#info">Информация</a></li>
-         <li><a href="">Фото и видео</a></li>
-         <li><a href="#map">Карта штата</a></li>
-         <li>Гостиницы</li>
-       </ul>
-    </nav>
+      <nav class="main-navigation">
+        <a>
+          <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+        </a>
+        <ul  class="site-navigation">
+           <li><a href="#info">Информация</a></li>
+           <li><a href="">Фото и видео</a></li>
+           <li><a href="#map">Карта штата</a></li>
+           <li>Гостиницы</li>
+        </ul>
+      </nav>
     </header>
   <main><h1>Гостиницы</h1>
    <section>
@@ -58,7 +58,7 @@
       <h3>Стоимость жилья в сутки(Р)</h3>
         <span>от0</span>  <span>до3000</span><br>
         <input type="range" min="0" max="3000"><br>
-        <button type="submit" name="show">показать</button>
+        <button class="show" type="submit" name="show">показать</button>
       </div>
     </form>
      <h3>НАЙДЕНО:</h3>
@@ -79,49 +79,48 @@
            <img src="img/Amara.jpg" width="135" height="90" alt="photo Amara Resort & Spa ">
            <h3>Amara Resort & Spa</h3>
            <p>Гостиница  от 4000 р.</p>
-           <a href="">Подробнее</a>
-           <a href="">Забронировать</a>
+           <a href="" class="details">Подробнее</a>
+           <a href="" class="booking">Забронировать</a>
            <div> Здесь будет виджет для рейтинга</div>
          </li>
          <li>
            <img src="img/desert.jpg" width="135" height="90" alt="photo Desert quail Inn">
            <h3>Desert quail Inn</h3>
            <p>Мотель  от 3000 р.</p>
-           <a href="">Подробнее</a>
-           <a href="">Забронировать</a>
+           <a href="" class="details">Подробнее</a>
+           <a href="" class="booking">Забронировать</a>
            <div> Здесь будет виджет для рейтинга</div>
          </li>
          <li>
            <img src="img/diablo.jpg" width="135" height="90" alt="photo Villas at poco diablo">
            <h3>Villas at poco diablo</h3>
            <p>Апартаменты   от 2000 р.</p>
-           <a href="">Подробнее</a>
-           <a href="">Забронировать</a>
+           <a href="" class="details">Подробнее</a>
+           <a href="" class="booking">Забронировать</a>
            <div> Здесь будет виджет для рейтинга</div>
          </li>
        </ul>
      </section>
   </main>
-    <footer>
-     <section>
-       <h2>Наш контакт</h2>
-       <p>
-       #visitsedona<br>ТЕЛ. +7(495)666-02-66
-       </p>
-     </section>
-     <section class="social-media">
-       <h2>Мы в социальных сетях</h2>
-       <p>
-       <a href=""> <img src="img/twitter.svg" width="17" height="17" alt="twitter"> Тут будет наш твиттер</a>
-       <a href=""> <img src="img/fb-icon.svg" width="12" height="22" alt="fb">  Тут будет наш фейсбук</a>
-       <a href=""> <img src="img/youtube.svg" width="20" height="16" alt="youtube"> Тут будет наш ютуб</a>
-      </p>
-    </section>
-  <p>
-      Website by:
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML Academy"></a>
-  </p>
-    </footer>
-
+  <footer>
+   <section  class="contact">
+     <h2 class="visually-hidden">Наш контакт</h2>
+     <p>
+     #visitsedona<br>ТЕЛ. +7(495)666-02-66
+     </p>
+   </section>
+   <section >
+     <h2 class="visually-hidden">Мы в социальных сетях</h2>
+     <p class="social">
+     <a href="" class="icon"> <img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="наш твиттер"></a>
+     <a href="" class="icon"> <img src="img/fb-icon.svg" width="12" height="22" alt="fb" aria-label="наш фейсбук"></a>
+     <a href="" class="icon"> <img src="img/youtube.svg" width="20" height="16" alt="youtube" aria-label="наш ютуб"></a>
+    </p>
+  </section>
+<p class="htmlacademy">
+    Website by:
+    <a class="htmlacademy-logo" href="https://htmlacademy.ru" ><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML Academy"></a>
+</p>
+  </footer>
   </body>
 </html>

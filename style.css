@@ -7,6 +7,8 @@
  --transparent-black: #333333;
  --icon-black: #231F20;
  --basic-brown: #766357;
+ --focus-brown: #604E43;
+ --active-brown: #503E33;
  --basic-white: #FFFFFF;
 }
 
@@ -74,11 +76,13 @@ img {
 
 .sedona-info {
   text-align: center;
-  color:red;
+  color: var(--transparent-black);
 }
+
 .sedona-info .info-header {
   font-size: 21px;
   font-weight: 700;
+  color: var(--basic-black);
 }
 
 
@@ -142,13 +146,26 @@ img {
   padding: 30px;
 }
 
+.hotel-search h3:hover,
+.hotel-search h3:focus {
+  background-color: var(--focus-brown);
+  }
+
+.hotel-search h3:active {
+    background-color: var(--active-brown);
+    color: var(--basic-white);
+    opacity:0.3;
+    mix-blend-mode: normal;
+    }
+
+
 .hotel-search label{
   font-weight: 700;
   line-height: 26px;
 }
 
 ::-webkit-input-placeholder{
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -182,10 +199,15 @@ button:active {
   mix-blend-mode: normal;
 }
 
+.social a{
+  width: 46px;
+  height: 48px;
+}
+
 .icon {
   background-color: var(--basic-blue);
+  align: center;
   vertical-align: middle;
-  padding:16px;
 }
 
 .contact {
@@ -211,7 +233,81 @@ button:active {
 text-align: right;
 }
 
+.htmlacademy-logo{
+  color: var(--basic-black);
+}
+
 .htmlacademy-logo:hover,
 .htmlacademy-logo:focus {
-  color:var(--basic-blue)
+  color:var(--basic-blue);
+}
+
+/*second page*/
+.show{
+  background-color: var(--basic-black);
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  width: 137px;
+  height: 36px;
+  font-size: 14px;
+  font-weight:400;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding-top: 8px ;
+}
+
+.show:hover,
+.show:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.details {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+  width:110px;
+  height: 27px;
+  padding: 6px;
+}
+
+.details:hover,
+.details:focus {
+  background-color: var(--focus-blue);
+}
+
+.details:active {
+ background-color: var(--active-blue);
+ color: var(--basic-white);
+ opacity:0.3;
+ mix-blend-mode: normal;
+}
+
+.booking{
+  color: var(--basic-white);
+  font-size:14px;
+  font-weight: 700;
+  background-color: var(--basic-brown);
+  width: 110px;
+  margin: auto;
+  padding: 6px;
+}
+
+.booking:hover,
+.booking:focus {
+  background-color: var(--focus-brown);
+  }
+
+.booking:active{
+  background-color: var(--active-brown);
+  color: var(--basic-white);
+  opacity:0.3;
+  mix-blend-mode: normal;
 }
