@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <title>Гостиницы</title>
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link href="normalize.css" rel="stylesheet">
       <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
+    </head>
+    <body class="page-body">
+    <div class="main-block" >
+     <header>
       <nav class="main-navigation">
-        <a>
-          <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-        </a>
-        <ul  class="site-navigation">
-           <li><a href="#info">Информация</a></li>
-           <li><a href="">Фото и видео</a></li>
-           <li><a href="#map">Карта штата</a></li>
-           <li>Гостиницы</li>
-        </ul>
-      </nav>
+       <a class="logo-sedona" href="index.html">
+        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+       </a>
+       <ul  class="site-navigation">
+        <li><a href="#info">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
+        <li><a href="#map">Карта штата</a></li>
+        <li><a href="sedonahotels.html">Гостиницы</a></li>
+      </ul>
+     </nav>
     </header>
   <main><h1>Гостиницы</h1>
    <section>
@@ -102,25 +104,24 @@
        </ul>
      </section>
   </main>
-  <footer>
+  <footer class="footer">
    <section  class="contact">
      <h2 class="visually-hidden">Наш контакт</h2>
      <p>
      #visitsedona<br>ТЕЛ. +7(495)666-02-66
      </p>
    </section>
-   <section >
+   <section class="social">
      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-     <p class="social">
      <a href="" class="icon"> <img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="наш твиттер"></a>
      <a href="" class="icon"> <img src="img/fb-icon.svg" width="12" height="22" alt="fb" aria-label="наш фейсбук"></a>
      <a href="" class="icon"> <img src="img/youtube.svg" width="20" height="16" alt="youtube" aria-label="наш ютуб"></a>
-    </p>
   </section>
-<p class="htmlacademy">
+  <section class="htmlacademy">
     Website by:
     <a class="htmlacademy-logo" href="https://htmlacademy.ru" ><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML Academy"></a>
-</p>
+  </section>
   </footer>
-  </body>
+</div>
+</body>
 </html>

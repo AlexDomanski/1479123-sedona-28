@@ -13,7 +13,8 @@
 }
 
 body {
-  min-width: 1220px;
+  min-width: 1200px;
+  height:100%;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -23,6 +24,7 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  text-align: center;
 }
 
 .visually-hidden {
@@ -36,12 +38,26 @@ body {
   clip: rect(0 0 0 0)
 }
 
+.main-block{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+
+}
 .background {
    background-image: url("img/Group-2.jpg");
    background-repeat: no-repeat;
    background-position: center;
    width:1200px;
-   height:510px;
+   height:509px;
+   background-position: top center;
+
+}
+
+.background img{
+  text-align: center;
+  padding-top: 77px;
 }
 
 a {
@@ -53,6 +69,21 @@ img {
   height: auto;
 }
 
+.logo-sedona{
+  top: 0;
+  position: absolute;
+  left:531px;
+  z-index: 1;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+
 .main-navigation {
   font-size: 14px;
   font-weight: 700;
@@ -63,6 +94,36 @@ img {
 
 .site-navigation {
   list-style: none;
+  display:flex;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.site-navigation li{
+  width: 300px;
+}
+
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:last-child,
+.site-navigation li:nth-child(3) {
+  text-align: right;
+}
+
+ul{
+ margin-inline-start: 0px;
+ margin-inline-end: 0px;
+ padding-inline-start: 0px;
+ margin: 0px;
+}
+
+ol{
+ margin-inline-start: 0px;
+ margin-inline-end: 0px;
+ padding-inline-start: 0px;
 }
 
 .site-navigation a {
@@ -75,8 +136,14 @@ img {
 }
 
 .sedona-info {
-  text-align: center;
   color: var(--transparent-black);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:123px;
+  margin-top: 43px;
+  margin-bottom: 51px;
 }
 
 .sedona-info .info-header {
@@ -90,6 +157,13 @@ img {
   list-style: none;
 }
 
+.features-list{
+  display:grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 330px 256px 256px;
+}
+
+
 .blue-background {
   background-color: var(--basic-blue);
   color: var(--basic-white);
@@ -100,14 +174,26 @@ img {
   height: 256px;
 }
 
-.feature-item h3 {
+.feature-item-city h3,
+.feature-item-bridge h3,
+.other-features h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  margin-top:  47px;
 }
 
-.true-city-picture{
-  margin-left: 400px;
+.feature-item-city{
+  display: flex;
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+.feature-item-bridge{
+  display: flex;
+  flex-direction: row-reverse;
+  grid-row: 3/4;
+  grid-column: 1/4;
 }
 
 .other-features {
@@ -120,11 +206,27 @@ img {
   height: 256px;
 }
 
+.feature-item-one{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.feature-item-two{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.feature-item-three{
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
 .features-extra {
   color: var(--basic-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  padding-bottom:
 }
 
 .search-header {
@@ -199,16 +301,11 @@ button:active {
   mix-blend-mode: normal;
 }
 
-.social a{
-  width: 46px;
-  height: 48px;
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.icon {
-  background-color: var(--basic-blue);
-  align: center;
-  vertical-align: middle;
-}
 
 .contact {
   font-size: 21px;
@@ -216,9 +313,38 @@ button:active {
   line-height: 36px;
 }
 
-.social {
-  text-align: center;
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+  margin: auto;
 }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
+}
+
+.fb{
+  margin-left: 6px;
+}
+
+.youtube{
+  margin-left: 6px;
+}
+
+.htmlacademy {
+text-align: right;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 197px;
+margin:auto;}
 
 .icon:hover,
 .icon:focus {
@@ -227,10 +353,6 @@ button:active {
 
  .icon:active {
   background-color: var(--active-blue);
-}
-
-.htmlacademy {
-text-align: right;
 }
 
 .htmlacademy-logo{
