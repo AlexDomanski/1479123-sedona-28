@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Гостиницы</title>
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-      <link href="normalize.css" rel="stylesheet">
-      <link href="style.css" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body class="page-body">
     <div class="main-block" >
-     <header>
+     <header class="main-header">
       <nav class="main-navigation">
        <a class="logo-sedona" href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
@@ -23,67 +23,67 @@
      </nav>
     </header>
   <main>
-  <h1 class="visually-hidden">Гостиницы</h1>
+    <h1 class="visually-hidden">Гостиницы</h1>
     <h2 class="visually-hidden">Фильтр гостиниц</h2>
     <div class="main-filter-container">
-    <form action="https://echo.htmlacademy.ru" method="get" class="main-filter">
-    <div class="main-lists">
-     <div class="filter-lists">
-     <h3>Инфраструктура:</h3>
-      <ul class="infrastructure">
-        <li>
-          <label>
-          <input class="checkbox" type="checkbox" name="pool" checked>
-          <span class="fake-checkbox"></span>
-          <span class="checkbox-text">бассейн</span>
-          </label>
-        </li>
-        <li>
-          <label>
-          <input class="checkbox" type="checkbox" name="parking">
-          <span class="fake-checkbox"></span>
-          <span class="checkbox-text">парковка</span>
-          </label>
-        </li>
-        <li>
-          <label>
-          <input class="checkbox" type="checkbox" name="wifi">
-          <span class="fake-checkbox"></span>
-          <span class="checkbox-text">wi-fi</span>
-          </label>
-        </li>
+      <form action="https://echo.htmlacademy.ru" method="get" class="main-filter">
+       <div class="main-lists">
+        <div class="filter-lists">
+        <h3>Инфраструктура:</h3>
+        <ul class="infrasructure">
+          <li>
+            <label>
+            <input class="checkbox" type="checkbox" name="pool" checked>
+            <span class="fake-checkbox"></span>
+            <span class="checkbox-text">бассейн</span>
+            </label>
+         </li>
+         <li>
+           <label>
+           <input class="checkbox" type="checkbox" name="parking">
+           <span class="fake-checkbox"></span>
+           <span class="checkbox-text">парковка</span>
+           </label>
+         </li>
+         <li>
+           <label>
+           <input class="checkbox" type="checkbox" name="wifi">
+           <span class="fake-checkbox"></span>
+           <span class="checkbox-text">wi-fi</span>
+           </label>
+         </li>
       </ul>
-    </div>
+      </div>
     <div class="filter-lists">
     <h3>Тип жилья:</h3>
       <ul>
-        <li>
-          <label>
-          <input class="checkbox" type="checkbox" name="hotel" checked>
-          <span class="fake-checkbox"></span>
-          <span class="checkbox-text">гостиница</span>
-          </label>
-        </li>
-        <li>
-          <label>
-          <input class="checkbox" type="checkbox" name="motel" checked>
-          <span class="fake-checkbox"></span>
-          <span class="checkbox-text">мотель</span>
-          </label>
-        </li>
-        <li>
-          <label>
-          <input class="checkbox" type="checkbox" name="appartment" checked>
-          <span class="fake-checkbox"></span>
-          <span class="checkbox-text">апартаменты</span>
-          </label>
-        </li>
+         <li>
+           <label>
+           <input class="checkbox" type="checkbox" name="hotel" checked>
+           <span class="fake-checkbox"></span>
+           <span class="checkbox-text">гостиница</span>
+           </label>
+         </li>
+         <li>
+           <label>
+           <input class="checkbox" type="checkbox" name="motel" checked>
+           <span class="fake-checkbox"></span>
+           <span class="checkbox-text">мотель</span>
+           </label>
+         </li>
+         <li>
+           <label>
+           <input class="checkbox" type="checkbox" name="appartment" checked>
+           <span class="fake-checkbox"></span>
+           <span class="checkbox-text">апартаменты</span>
+           </label>
+         </li>
       </ul>
       </div>
     </div>
     <div>
     <fieldset class="control-price-form">
-      <legend>Стоимость в сутки(Р):</legend>
+      <legend>Стоимость в сутки (Р):</legend>
        <div class="price-control">
          <label class="min-price" for="min-price">от</label>
          <input type="number" name="price-min" id="min-price" min="0" value="0" step="100" class="input-price-min">
@@ -122,7 +122,7 @@
     </div>
     <section class="hotel-output">
        <h2 class="visually-hidden">Список гостиниц</h2>
-       <ul>
+       <ul class="output-lists">
          <li>
            <img src="img/Amara.jpg" width="135" height="90" alt="photo Amara Resort & Spa ">
            <div class="hotel-details">
@@ -202,11 +202,11 @@
      </section>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer second-page-footer">
    <section  class="contact">
      <h2 class="visually-hidden">Наш контакт</h2>
      <p>
-     #visitsedona<br>ТЕЛ. +7(495)666-02-66
+     #visitsedona<br><a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
      </p>
    </section>
    <section class="social">
