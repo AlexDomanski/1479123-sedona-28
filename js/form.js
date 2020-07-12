@@ -30,7 +30,7 @@ formField.addEventListener("submit", function (evt) {
   if (!inDate.value || !outDate.value) {
     evt.preventDefault();
      formField.classList.add("error");
-  } else {
+  }else {
     if (isStorageSupport) {
       localStorage.setItem("in-date", inDate.value);
       localStorage.setItem("out-date", outDate.value);
