@@ -724,6 +724,7 @@ a.active-page{
 .icon:hover,
 .icon:focus{
   background-color: var(--active-blue);
+  outline: none;
 }
 
 .htmlacademy{
@@ -735,6 +736,10 @@ width: 197px;
 margin:auto;
 padding-right: 72px;
 padding-top: 4px;}
+
+.htmlacademy a{
+  outline: none;
+}
 
 .htmlacademy-logo:hover path,
 .htmlacademy-logo:focus path{
@@ -1000,6 +1005,7 @@ padding-top: 4px;}
   margin-top: 18px;
   margin-right: 7px;
   padding-top: 2px;
+  outline: none;
 }
 
 .show-button:hover,
@@ -1099,6 +1105,10 @@ padding-top: 4px;}
   margin-left: 10px;
 }
 
+.up-down a{
+  outline: none;
+}
+
 .down.active-sort path{
   fill: var(--basic-blue);
 }
@@ -1156,6 +1166,7 @@ min-height: 97px;
 .hotels-header>a:hover,
 .hotels-header>a:focus{
   color: var(--basic-blue);
+  outline: none;
 }
 
 .hotels-header>a:active,
@@ -1197,6 +1208,7 @@ min-height: 97px;
 .details:hover,
 .details:focus{
   background-color: var(--focus-blue);
+  outline: none;
 }
 
 .details:active{
@@ -1219,6 +1231,7 @@ min-height: 97px;
 .booking:hover,
 .booking:focus{
   background-color: var(--focus-brown);
+  outline: none;
 }
 
 .booking:active{
