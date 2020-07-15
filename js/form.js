@@ -12,12 +12,13 @@ try {
   isStorageSupport = false;
 }
 
-formButton.addEventListener("click", function (evt) {
+formButton.addEventListener("focus" || "click", function (evt) {
   evt.preventDefault();
   formField.classList.toggle("form-show");
   formField.classList.remove("error");
   inDate.focus();
 });
+
 
 if (storage) {
    inDate.value = storage;
@@ -30,6 +31,10 @@ formField.addEventListener("submit", function (evt) {
   if (!inDate.value || !outDate.value) {
     evt.preventDefault();
      formField.classList.add("error");
+     formField.offsetWidth = formField.offsetWidth;
+     formField.classList.remove("error");
+     formField.offsetWidth = formField.offsetWidth;
+    formField.classList.add("error");
   }else {
     if (isStorageSupport) {
       localStorage.setItem("in-date", inDate.value);
